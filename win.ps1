@@ -48,7 +48,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; `
   iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
   
 # install and configure saltstack
-choco install saltminion --params="'/master:sm.fwtg.ppa.ua /minion-name:comp060'" -Force -Y
+choco install saltminion --params="'/master:sm.fwtg.pp.ua /minion-name:comp060'" -Force -Y
 $Text= gc 'C:\salt\conf\minion' -Raw
 $Text-replace('\#id\:', 'id: comp060') | Set-Content 'C:\salt\conf\minion'
 "comp060" | Set-Content 'C:\salt\conf\minion_id'
