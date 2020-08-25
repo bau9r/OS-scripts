@@ -6,7 +6,6 @@
 #
 # Made by Artem Listopad
 #
-# just another comment line
 #-------------------------------------------
 
 
